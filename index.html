@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <title>TODO APP</title>
+    </head>
+<body>
+    <!-- <div class="app">
+    <div class="container">
+        <div id="wrapper">
+            <input type="text"
+            placeholder="Task To Be Done..."/>
+            <button onclick="addTodo()" id="add-btn">Add</button>
+        </div>
+        <div id="tasks">
+            <p id="pending-tasks">
+                You have <span class="count-value">0</span> task(s) to complete.
+            </p>
+        </div>
+    </div>
+    <p id="error">Input cannot be empty!</p>
+    </div> -->
+
+    <div
+      style="
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      "
+    >
+      <h1>Todo App</h1>
+
+      <input type="text" id="todoInput" />
+
+      <button onclick="addTodo()">Add todo</button>
+      <button onclick="deleteAll()">Delete all</button>
+    </div>
+
+    <div>
+      <ul id="list"></ul>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
